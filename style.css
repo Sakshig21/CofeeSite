@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.header{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("img/Cafe3.jpeg") center/cover no-repeat;
+    min-height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+.main{
+    position: absolute;
+}
+.navi-slidedown{
+    animation-name: slidedown;
+  -webkit-animation-name: slidedown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  position: fixed;
+  padding: 28px;
+  width: 100%;
+  z-index: 1;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+
+.main a{
+    float: right;
+    background: none;
+    padding: 15px;
+    padding-right: 2%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #f8f9fa;
+    display: inline;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 500;
+    font-size: medium;
+}
+.main .a1:hover{
+color: #bd1220;
+}
+.logo{
+    float: left;
+    padding: 0% 15%;
+    z-index: 3;
+    position: fixed;
+    animation-name:slideleft;
+   animation-duration: 1s;
+    
+}
+@keyframes slideleft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+.fix{
+    position: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    z-index: 2;
+    float: left;
+    padding-right: 5%;
+    background: none;
+    animation-name: slidedown;
+    
+    animation-duration: 1s;
+    
+}
+@keyframes slidedown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.5rem;
+}
+.banner-title{
+    font-family: SpartanLimport;
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 2.5rem;
+    line-height: 1.3;
+    animation-name: slidedown;
+   
+    animation-duration: 1s;
+    
+}
+.banner-subtitle{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: #f8f9fa;
+    animation-name: slideup;
+    
+    animation-duration: 1s;
+    
+}
+@keyframes slideup {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+.bannerbottom{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: downarrow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.bannerbottom img{
+    height: 40px;
+}
+@keyframes downarrow {
+    0% {
+      top:91%;
+    }
+  
+    50% {
+      top:96%;
+    }
+    
+    100% {
+      top:91%;
+    }
+  }
+  .content-divider{
+    height: 0.5rem;
+    background: linear-gradient( to left, #a07070, #bc8b8b, #8e4242, #a28f8f, #513434 );
+  }
+  .skills{
+    background: #E0E5EC;
+  display: inline-flex;
+  width:100%;
+  height: 17rem;
+  }
+  .skill1{
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 15px;
+    width:25%;
+  }
+  .skill2{
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+    width:25%;
+  }
+  .skill-title{
+    font-size: 0.9rem;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  margin-bottom: 1.5rem;
+  color: #bd1220;
+  transition: 0.5s;
+  }
+  .skill-text{
+    max-width: 13rem;
+    margin: 0 auto;
+    text-shadow: 10px;
+    font-family: RalewayELimport;
+  }
+  .skill1:hover {
+    background:#52080e;
+    opacity: 1.2;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .skill2:hover {
+    background: #52080e;
+    opacity: 1.2;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  
+  .skill1:hover .skill-title {
+    color: #8e4242;
+    font-size: 17px;
+  }
+  
+  .skill2:hover .skill-title {
+    color: #8e4242;
+    font-size: 17px;
+  }
+  
+  .skill1:hover .skill-text {
+    color: white;
+  }
+  .skill2:hover .skill-text {
+    color: white;
+  }
+  /* About section  */
+  #myvideo{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .about-section{
+    display: flex;
+  }
+  .about-img1,
+.about-info1 {
+  float: left;
+  width: 50%;
+  padding: 5rem;
+  background-color: #E0E5EC;
+  padding: 1rem;
+}
+.scroll-about{
+    width: 100%;
+  display: block;
+  transition: 0.5s;
+  border-radius: 1rem;
+  
+  animation-name: slidein;
+  
+  animation-duration: 1s;
+ 
+}
+@keyframes slidein {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  .section-subtitle{
+    color: #bd1220;
+    font-family: SpartanLimport;
+    font-size: 20px;
+  }
+  .section-title{
+    font-family: SpartanLimport;
+  }
+  .about-text{
+    
+        margin: 1rem 0;
+        max-width: 26rem;
+        color: black;
+        font-family: RalewayELimport;
+      
+  }
+  .about{
+    background-color: #E0E5EC;
+  }
+  .main-btn {
+    color:black;
+    display: inline-block;
+    background:none;
+    text-transform: uppercase;
+    padding: 0.8rem 1.2rem;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: 0.15rem solid #bd1220;
+    text-decoration: none;
+    /*outline-offset: 4px;*/
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: 0.5s;
+    position: absolute;
+    z-index: 1;
+  }
+  .main-btn:hover{
+    color: white;
+    background-color: #bd1220;
+    opacity:1;
+    
+  }
+  .menu-template{
+    height: 40vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+      url("img/Cafe1.jpg") center/cover no-repeat;
+    position: relative;
+    background-attachment: fixed;
+  }
+  .menu-title{
+    font-family: SpartanLimport;
+    color: #bd1220;
+    margin-top: 2.5rem;
+    line-height: 1.3;
+    text-align: center;
+    padding-top: 6.5%;
+    font-size: 30px;
+}
+  .menu-subtitle{
+    text-transform: uppercase;
+    font-family: SpartanLimport;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+  }
+  .menu-header-container{
+    display: inline-flex;
+    width: 100%;
+    padding: 1rem;
+  }
+  .menu-hr-container {
+    width: 100%;
+    height: 41px;
+    padding-top: 2.5%;
+}
+.menu-hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-color: black;
+}
+.menu-button-on {
+    background-color: #E0E5EC;
+    border-radius: 50%;
+    border: 5px solid #E0E5EC;
+    width: 10%;
+    transition: 0.5s;
+    box-shadow: none;
+    outline: none;
+}
+.menu-circle-img {
+    width: 75px;
+}
+.menu-button-off {
+    background-color: #E0E5EC;
+    border-radius: 50%;
+    border: 5px solid #E0E5EC;
+    width: 10%;
+    outline: none;
+    transition: 0.5s;
+    box-shadow: 2px 2px 8px rgb(163 177 198 / 60%), -2px -2px 12px rgb(255 255 255 / 50%);
+}
+.menudrinks{
+  display: flex;
+}
+.flipcard1{
+  width: 25%;
+  height: 420px;
+  border-radius: 10px;
+  margin: 40px;
+  perspective: 1000px;
+}
+.cardimg{
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.flipcard-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  box-shadow: 9px 9px 16px rgb(163 177 198 / 60%), -9px -9px 16px rgb(255 255 255 / 50%);
+}
+.flipcard1:hover .flipcard-inner{
+  transform: rotatey(180deg);
+}
+.flipcard-front, .flipcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+.flipcard-back {
+  background-color: rgb(255, 255, 255);
+  color: #bd1220;
+  transform: rotatey(180deg);
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+.menu-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+ 
+}
+/* Response form section  */
+.form{
+  display: flex;
+  padding: 0px 40px ;
+  
+
+}
+/* response section-column left  */
+.response{
+  width: 50%;
+  float: left;
+}
+
+.form-h1{
+  color: #bd1220;
+}
+
+
+label {
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #E0E5EC;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+  outline: none;}
+
+  input[type="email"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #E0E5EC;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type="feedback"], textarea {
+  width: 100%;
+  background-color: #E0E5EC;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+input[type="submit"] {
+  width: 30%;
+  background-color: #E0E5EC;
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 14px 15px;
+  margin: 8px 0;
+  border: 1px solid black;
+  transition: 0.5s;
+  cursor: pointer;
+  float: right;
+}
+/* response section - column right  */
+.testimonials{
+  width: 50%;
+  float: right;
+  margin-left: 80px;
+}
+.slideshow{
+  width: 75%;
+}
+.p1, .p2{
+  display: block;
+  clear: both;
+  margin-top: 100px;
+  text-align: left;
+  font-size: 17px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.p2{
+  text-align: right;
+}
+
+.contain{
+  clear: both;
+  float: right;
+  width: 70%;
+  position: relative;
+  height: 82px;
+  color: #bd1220;
+}
+.contain1{
+  clear: both;
+  float: left;
+  width: 70%;
+  position: relative;
+  height: 82px;
+  color: #bd1220;
+}
+.contain-img{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  right: 0;
+}
+.contain-img1{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  left: 0;
+}
+.contain-hr{
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  border:1px solid #bd1220;
+}
+.contain-hr1{
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  border:1px solid #bd1220;
+}
+.contain-logo1{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  position: absolute;
+  top: 55%;
+}
+.contain-logo2{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+}
+.contain-logo3{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  position: absolute;
+  top: 55%;
+  left: 30%;
+}
+.contain-logo4{
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+}
+.contain-name{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.contain-name1{
+  position: absolute;
+  top: 25%;
+  left: 32%;
+}
+
+/* contact header  */
+
+.contact{
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("img/map4.jpeg") center/cover no-repeat;
+  clear: both;
+  position: relative;
+  background-attachment: fixed;;
+}
+/* footer  */
+.footer{
+  display: flex;
+  padding: 50px;
+}
+.map{
+  float: left;
+  width: 50%;
+  border-radius: 20px;
+}
+.focusimg{
+  float: right;
+  width: 50%;
+  overflow: hidden;
+  border-radius: 10%;
+  position:relative;
+}
+.focusimg-text{
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.focusimg1{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  transition: 1s;
+  opacity: 0.6;
+}
+
+.focusimg1:hover{
+  transform: scale(1.5);
+}
+/* footer logo section  */
+.logocontain{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.logosocial{
+  margin:  0 20px;
+  margin-bottom: 20px;
+}
+.logocontain-anchor{
+  text-decoration: none;
+  color: grey;
+}
